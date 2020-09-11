@@ -1,8 +1,12 @@
-import { db } from "../../constant/firebaseConfig";
-
 import React, { useState, useEffect } from "react";
+import { db } from "../../constant/firebaseConfig";
+import { useRouteMatch, Switch, Route } from "react-router-dom";
+import BlogPage from "./BlogPage";
+import PostDetail from "./PostDetail";
 
 const Blog = () => {
+  let match = useRouteMatch();
+
   const [post, setPost] = useState([]);
   useEffect(() => {
     const getPost = db.collection("blog-post").onSnapshot((snapshot) => {
@@ -11,13 +15,24 @@ const Blog = () => {
       }));
       setPost(allPost);
     });
-    // return () => {
-    //   console.log("loading");
-    //   getPost();
-    // };
+    return () => {
+      getPost();
+    };
   }, []);
-  console.log(post);
-  return <div>this is blog page</div>;
+  const posts = post.map((data) => <BlogPage key={data.id} post={data} />);
+
+  return (
+    <div>
+      <Switch>
+        <Route exact path={match.path}>
+          {posts}
+        </Route>
+        <Route exact path={`/blog/:postId`}>
+          <PostDetail />
+        </Route>
+      </Switch>
+    </div>
+  );
 };
 
 export default Blog;
