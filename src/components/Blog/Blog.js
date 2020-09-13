@@ -25,7 +25,15 @@ const Blog = () => {
     <div>
       <Switch>
         <Route exact path={match.path}>
-          {posts}
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+            }}
+          >
+            {posts}
+          </div>
         </Route>
         <Route exact path={`/blog/:postId`}>
           <PostDetail />
