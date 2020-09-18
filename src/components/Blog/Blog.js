@@ -25,6 +25,7 @@ const Blog = () => {
     <div>
       <Switch>
         <Route exact path={match.path}>
+          <h1 style={{ textAlign: "center" }}>Các Hoạt Động</h1>
           <div
             style={{
               display: "flex",

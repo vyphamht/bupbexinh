@@ -11,8 +11,8 @@ class NavBar extends Component {
   render() {
     return (
       <Router>
-        <div>
-          <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div style={{ marginBottom: "3rem" }}>
+          <nav className="navbar navbar-expand-lg navbar-light bg-light fixed">
             <button
               className="navbar-toggler"
               type="button"
@@ -42,7 +42,7 @@ class NavBar extends Component {
                 </li>
                 <li className="nav-item">
                   <Link to="/music-library" className="nav-link">
-                    Thư Viện Âm Nhạc
+                    Thư Viện Media
                   </Link>
                 </li>
                 <li className="nav-item">

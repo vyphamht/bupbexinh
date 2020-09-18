@@ -1,25 +1,26 @@
 .music-library {
   display: grid;
   justify-content: center;
-  width: 100vw;
-  height: 100vh;
 }
-.music {
+/* .music {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
 }
 .music-item {
   height: 300px;
-}
+} */
+
 .player-wrapper {
-  width: 500px;
   position: relative;
-  padding-top: 56.25%; /* 720 / 1280 = 0.5625 */
+  padding-top: 56.25%;
 }
 
 .react-player {
   position: absolute;
   top: 0;
   left: 0;
+}
+.card-img {
+  height: 200px;
 }
