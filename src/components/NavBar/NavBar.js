@@ -24,7 +24,7 @@ class NavBar extends Component {
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="/">
+            <a className="navbar-brand" href="/">
               <img src={logo} alt="Company Logo" width="40" height="40" />
             </a>
 

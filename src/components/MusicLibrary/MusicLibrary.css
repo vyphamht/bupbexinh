@@ -2,14 +2,6 @@
   display: grid;
   justify-content: center;
 }
-/* .music {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-}
-.music-item {
-  height: 300px;
-} */
 
 .player-wrapper {
   position: relative;
