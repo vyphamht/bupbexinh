@@ -1,58 +1,69 @@
 import React, { Component } from "react";
 import "./NavBar.css";
-import $ from "jquery";
 import logo from "../../assets/ballet.svg";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Blog from "../Blog/Blog";
 import MusicLibrary from "../MusicLibrary/MusicLibrary";
 import RegisterClass from "../RegisterClass/RegisterClass";
+import Contact from "../Contact/Contact";
 
 class NavBar extends Component {
-  componentDidMount() {
-    $("#search-icon").click(function () {
-      $(".nav").toggleClass("search");
-      $(".nav").toggleClass("no-search");
-      $(".search-input").toggleClass("search-active");
-    });
-
-    $(".menu-toggle").click(function () {
-      $(".nav").toggleClass("mobile-nav");
-      $(this).toggleClass("is-active");
-    });
-  }
   render() {
     return (
       <Router>
-        <div className="nav-wrapper">
-          <nav className="navbar">
-            <a href="/">
-              <img src={logo} alt="Company Logo" />
+        <div>
+          <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarTogglerDemo03"
+              aria-controls="navbarTogglerDemo03"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+              <img src={logo} alt="Company Logo" width="40" height="40" />
             </a>
-            <div className="menu-toggle" id="mobile-menu">
-              <span className="bar"></span>
-              <span className="bar"></span>
-              <span className="bar"></span>
+
+            <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li className="nav-item">
+                  <Link to="/" className="nav-link">
+                    Trang Chủ
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/blog" className="nav-link">
+                    Sự Kiện
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/music-library" className="nav-link">
+                    Thư Viện Âm Nhạc
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/register" className="nav-link">
+                    Đăng Kí Lớp Học
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/contact" className="nav-link">
+                    Liên Hệ
+                  </Link>
+                </li>
+              </ul>
             </div>
-            <ul className="nav">
-              <li className="nav-item">
-                <Link to="/">Info</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/blog">Blog</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/music-library">Music Library</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/register">Register Class</Link>
-              </li>
-            </ul>
           </nav>
         </div>
         <Switch>
           <Route path="/blog" component={Blog} />
           <Route path="/music-library" component={MusicLibrary} />
           <Route path="/register" component={RegisterClass} />
+          <Route path="/contact" component={Contact} />
         </Switch>
       </Router>
     );
