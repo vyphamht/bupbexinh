@@ -1,27 +1,47 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { db } from "../../constant/firebaseConfig";
 import "./MusicLibrary.css";
 import ReactPlayer from "react-player";
 
 const MusicLibrary = () => {
-  return (
-    <div className="music-library">
-      <h1 style={{ textAlign: "center" }}>Thư Viện Media</h1>
-      <div className="music">
+  const [musicItem, setMusicItem] = useState([]);
+  useEffect((e) => {
+    const getMusicItem = db
+      .collection("media-library")
+      .onSnapshot((snapshot) => {
+        const allItems = snapshot.docs.map((doc) => ({
+          ...doc.data(),
+        }));
+        setMusicItem(allItems);
+      });
+    return () => {
+      getMusicItem();
+    };
+  }, []);
+  const list = musicItem.map((item) => {
+    return (
+      <div className="music" key={item.media}>
         <div className=" mb-3">
           <div className="row no-gutters">
             <div className="col-md-4">
               <div className="card-img">
                 <ReactPlayer
-                  url="https://www.youtube.com/watch?v=nyGw5TJZk3Y"
+                  url={item.media}
                   className="react-player"
                   width="100%"
                   height="100%"
+                  config={{
+                    youtube: {
+                      playerVars: { showinfo: 1 },
+                      origin: "http://localhost:3000",
+                    },
+                  }}
                 />
               </div>
             </div>
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
+                <h5 className="card-title">{item.title}</h5>
                 <p className="card-text">
                   This is a wider card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
@@ -34,21 +54,13 @@ const MusicLibrary = () => {
             </div>
           </div>
         </div>
-        {/* <div className="music-item">
-          <div className="player-wrapper">
-            <ReactPlayer
-              url="https://www.youtube.com/watch?v=nyGw5TJZk3Y"
-              className="react-player"
-              width="100%"
-              height="100%"
-            />
-          </div>
-          <h3>Quê Em Mùa Gặt</h3>
-          <p>
-            Chương trình 100 giây rực rỡ do Đài Truyên Hình Việt Nam tổ chức.
-          </p>
-        */}
       </div>
+    );
+  });
+  return (
+    <div className="music-library">
+      <h1 style={{ textAlign: "center" }}>Thư Viện Media</h1>
+      {list}
     </div>
   );
 };
