@@ -13,7 +13,7 @@ const BlogPage = ({ post }) => {
       <div style={{ maxWidth: "400px" }} className="card">
         <div className="card-image">
           <img src={post.img} alt="dance" style={{ width: "100%" }} />
-          <span className="card-title">{post.title}</span>
+          <h5 className="card-title">{post.title}</h5>
           <h6>{post.author}</h6>
         </div>
         <div className="card-content">
