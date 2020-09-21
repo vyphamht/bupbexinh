@@ -25,7 +25,7 @@ const App = () => {
         }}
       >
         <h1 className="animate__animated animate__slideInDown">
-          Bup be xinh - Tu Tin Toa Sang
+          Búp Bê Xinh - Tự Tin Toả Sáng
         </h1>
       </div>
 

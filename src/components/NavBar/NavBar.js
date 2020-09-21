@@ -29,7 +29,7 @@ class NavBar extends Component {
             </a>
 
             <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
-              <ul className="navbar-nav mr-auto mt-2 mt-lg-0 ">
+              <ul className="navbar-nav ml-auto mt-2 mt-lg-0 ">
                 <li className="nav-item">
                   <Link to="/" className="nav-link">
                     Trang Chủ
