@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./NavBar.css";
-import logo from "../../assets/ballet.svg";
+import logo from "../../assets/Logo.png";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Blog from "../Blog/Blog";
 import MusicLibrary from "../MusicLibrary/MusicLibrary";
@@ -25,11 +25,11 @@ class NavBar extends Component {
               <span className="navbar-toggler-icon"></span>
             </button>
             <a className="navbar-brand" href="/">
-              <img src={logo} alt="Company Logo" width="40" height="40" />
+              <img src={logo} alt="Company Logo" height="40" />
             </a>
 
             <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
-              <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+              <ul className="navbar-nav mr-auto mt-2 mt-lg-0 ">
                 <li className="nav-item">
                   <Link to="/" className="nav-link">
                     Trang Chủ
