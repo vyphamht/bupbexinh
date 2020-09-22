@@ -11,7 +11,7 @@ const Contact = () => {
     e.preventDefault();
     Axios({
       method: "POST",
-      url: "http://localhost:5000/send",
+      url: "http://localhost:5000/contact",
       data: { name, email, phone, concern, message },
     }).then((res) => {
       if (res.data.status === "success") {
