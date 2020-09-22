@@ -1,3 +1,4 @@
+import Axios from "axios";
 import React, { useState } from "react";
 
 const Contact = () => {
@@ -6,80 +7,91 @@ const Contact = () => {
   const [phone, setPhone] = useState("");
   const [concern, setConcern] = useState("");
   const [message, setMessage] = useState("");
+  const submitEmail = (e) => {
+    e.preventDefault();
+    Axios({
+      method: "POST",
+      url: "http://localhost:5000/send",
+      data: { name, email, phone, concern, message },
+    }).then((res) => {
+      if (res.data.status === "success") {
+        alert("Message sent.");
+        resetForm();
+      } else if (res.data.status === "fail") {
+        alert("Message fail to send.");
+      }
+    });
+  };
+  const resetForm = () => {
+    setName("");
+    setPhone("");
+    setEmail("");
+    setConcern("");
+    setMessage("");
+  };
   return (
     <div className="container">
       <h1 style={{ textAlign: "center" }}>Liên hệ</h1>
       <p>(*) mục cần điền</p>
-      <form className="needs-validation" noValidate>
+      <form onSubmit={submitEmail} method="POST">
         <div className="form-row">
           <div className="col-md-6 mb-3">
-            <label htmlFor="validationCustom01">Tên *</label>
+            <label>Tên *</label>
             <input
               type="text"
               className="form-control"
-              id="validationCustom01"
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
             />
-            <div className="valid-feedback">OK</div>
           </div>
           <div className="col-md-6 mb-3">
-            <label htmlFor="validationCustom02"> E-mail (nếu có)</label>
+            <label> E-mail (nếu có)</label>
             <input
               type="text"
               className="form-control"
-              id="validationCustom02"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              required
             />
-            <div className="valid-feedback">OK</div>
           </div>
         </div>
         <div className="form-row">
           <div className="col-md-6 mb-3">
-            <label htmlFor="validationCustom01">Số điện thoại *</label>
+            <label>Số điện thoại *</label>
             <input
               type="text"
               className="form-control"
-              id="validationCustom01"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               required
             />
-            <div className="valid-feedback">OK</div>
           </div>
           <div className="col-md-6 mb-3">
-            <label htmlFor="validationCustom02">Về vấn đề *</label>
+            <label>Về vấn đề *</label>
             <select
               className="form-control"
               type="select"
-              id="validationCustom02"
               value={concern}
               onChange={(e) => setConcern(e.target.value)}
               required
             >
+              <option></option>
               <option>Book show</option>
               <option>Thông tin chung</option>
               <option>Đối tác</option>
             </select>
-
-            <div className="valid-feedback">OK</div>
           </div>
         </div>
         <div className="form-row">
           <div className="col-md-12 mb-3">
-            <label htmlFor="validationCustom03">Tin nhắn *</label>
+            <label>Tin nhắn *</label>
             <textarea
               type="textarea"
               className="form-control"
-              id="validationCustom03"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
             />
-            <div className="invalid-feedback">Hay them tin nhan</div>
           </div>
         </div>
 
