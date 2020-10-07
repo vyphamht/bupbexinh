@@ -19,8 +19,8 @@ const App = () => {
         id="loader"
         style={{
           display: "grid",
-          alignItems: "center",
-          justifyItems: "center",
+          alignContent: "center",
+          justifyContent: "center",
           height: "100vh",
         }}
       >

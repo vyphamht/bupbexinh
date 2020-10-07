@@ -6,6 +6,7 @@ import Blog from "../Blog/Blog";
 import MusicLibrary from "../MusicLibrary/MusicLibrary";
 import RegisterClass from "../RegisterClass/RegisterClass";
 import Contact from "../Contact/Contact";
+import LandingPage from "../LandingPage/LandingPage";
 
 class NavBar extends Component {
   render() {
@@ -60,6 +61,7 @@ class NavBar extends Component {
           </nav>
         </div>
         <Switch>
+          <Route exact path="/" component={LandingPage} />
           <Route path="/blog" component={Blog} />
           <Route path="/music-library" component={MusicLibrary} />
           <Route path="/register" component={RegisterClass} />

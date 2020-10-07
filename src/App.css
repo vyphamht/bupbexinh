@@ -1,6 +1,8 @@
 .wholeApp {
   margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+  color: #202c45;
 }
 #loader {
-  color: pink;
+  color: hotpink;
 }

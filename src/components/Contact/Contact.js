@@ -96,9 +96,9 @@ const Contact = () => {
         </div>
 
         <button
-          className="btn btn-secondary col-md-12 mb-3 "
+          className="btn col-md-12 mb-3"
           type="submit"
-          style={{ padding: "3px" }}
+          style={{ padding: "20px" }}
         >
           Gửi
         </button>
