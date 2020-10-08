@@ -1,10 +1,13 @@
 import React from "react";
 import CTA from "./CTA/CTA";
+import Classes from "./Classes/Classes";
+import "./Landing.css";
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className="landing">
       <CTA />
+      <Classes />
     </div>
   );
 };

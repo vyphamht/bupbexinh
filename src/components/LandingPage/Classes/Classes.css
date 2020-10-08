@@ -1,0 +1,38 @@
+.class-icon {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.class-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.class-icon img {
+  max-height: 80px;
+}
+.class-icons h6 {
+  text-align: center;
+}
+.class-section {
+  padding: 5rem 0;
+}
+@media (min-width: 1201px) {
+  .class-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .class-icons {
+    width: 40em;
+  }
+  .class-icon img {
+    max-height: 150px;
+  }
+}

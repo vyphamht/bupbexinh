@@ -1,6 +1,9 @@
-#CTA-section {
+/* #CTA-section {
   background: url(../../../assets/promo-background.png) no-repeat 50%;
   height: 200vh;
+} */
+.cta-area {
+  margin: 1rem 0 5rem 0;
 }
 .desc,
 .illu,
@@ -36,18 +39,21 @@
   transition: all 0.25s ease;
   white-space: pre-wrap;
   cursor: pointer;
+  color: white;
 }
 .btn:hover {
-  background-color: coral;
+  background-color: #f28f3b;
+  border: 1px solid #f28f3b;
+  box-shadow: inset 1px 1px 0 1px #f28f3b;
 }
 .promo-hightlight {
   box-shadow: inset 0 -0.45em 0 0 hotpink;
   padding: 0 0.05em 0.05em;
 }
 .main-message {
-  background-color: #ffe5d400;
   height: 400px;
 }
+
 @media (min-width: 1201px) {
   .cta-area {
     display: flex;
@@ -61,5 +67,10 @@
     padding-left: 25px;
     padding-right: 25px;
     width: 100%;
+  }
+  .main-message h1 {
+    background-color: rgba(255, 105, 180, 0.144);
+    border-left: dashed 7px hotpink;
+    padding: 20px;
   }
 }
