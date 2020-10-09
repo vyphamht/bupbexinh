@@ -2,12 +2,14 @@
   background: url(../../../assets/promo-background.png) no-repeat 50%;
   height: 200vh;
 } */
+
 .cta-area {
   margin: 1rem 0 5rem 0;
 }
 .desc,
 .illu,
-.main-message {
+.main-message,
+.cta-area .desc {
   display: grid;
   justify-content: center;
   align-content: center;
@@ -71,6 +73,6 @@
   .main-message h1 {
     background-color: rgba(255, 105, 180, 0.144);
     border-left: dashed 7px hotpink;
-    padding: 20px;
+    padding: 50px 100px;
   }
 }

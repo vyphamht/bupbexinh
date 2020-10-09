@@ -6,7 +6,7 @@ import "./Landing.css";
 const LandingPage = () => {
   return (
     <div className="landing">
-      <CTA />
+      {/* <CTA /> */}
       <Classes />
     </div>
   );

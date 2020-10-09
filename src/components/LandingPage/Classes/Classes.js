@@ -31,6 +31,26 @@ const Classes = () => {
           </div>
         </div>
       </div>
+      <div className="TV-area">
+        <div>
+          <div className="tv-border">
+            <div className="screen-border"></div>
+            <div className="channel-dial"></div>
+            <div className="volume-dial"></div>
+
+            <span className="socket-1"></span>
+            <span className="socket-2"></span>
+            <span className="socket-3"></span>
+
+            <span className="speaker"></span>
+            <span className="speaker-2"></span>
+            <span className="speaker-3"></span>
+            <span className="make"></span>
+            <div className="screen-border-2"></div>
+            <canvas id="tv-screen" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
