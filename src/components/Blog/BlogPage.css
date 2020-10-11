@@ -22,10 +22,10 @@
 }
 a {
   text-decoration: none;
-  color: hotpink;
+  color: #ff7175;
 }
 a:hover {
-  color: #f28f3b;
+  color: #fdc177;
 }
 .buttons {
   display: flex;

@@ -1,0 +1,80 @@
+.house {
+  height: 900px;
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 80px;
+}
+.number-slogan {
+  display: flex;
+  margin-bottom: 35px;
+  box-sizing: border-box;
+  width: 70px;
+  height: 70px;
+  border: 2px solid #202c45;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: -0.44px;
+}
+.one {
+  background-color: #f7b4c3;
+  box-shadow: inset 8px 4px 0 0 #fff, 9px 5px 0 -2px #f7b4c3;
+}
+.two {
+  background-color: #b7e1dd;
+  box-shadow: inset 8px 4px 0 0 #fff, 9px 5px 0 -2px #b7e1dd;
+}
+.three {
+  background-color: #c1a4b8;
+  box-shadow: inset 8px 4px 0 0 #fff, 9px 5px 0 -2px #c1a4b8;
+}
+.slogan-hightlight-1 {
+  box-shadow: inset 0 -0.45em 0 0 #f7b4c3;
+  padding: 0 0.05em 0.05em;
+}
+.slogan-hightlight-2 {
+  box-shadow: inset 0 -0.45em 0 0 #b7e1dd;
+  padding: 0 0.05em 0.05em;
+}
+.slogan-hightlight-3 {
+  box-shadow: inset 0 -0.45em 0 0 #c1a4b8;
+  padding: 0 0.05em 0.05em;
+}
+
+@media (min-width: 1201px) {
+  /* .numbered-slogans {
+    flex-basis: 0;
+  } */
+  .house {
+    display: flex;
+    flex-direction: row !important;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 961px) {
+  .numbered-slogans {
+    flex: 1 1 45%;
+    order: 1;
+  }
+  .house {
+    display: flex;
+    flex-direction: row !important;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 960px) and (min-width: 796px) {
+  .slogans {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+  }
+  .house {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+  }
+}

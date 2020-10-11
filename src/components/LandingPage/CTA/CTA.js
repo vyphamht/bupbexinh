@@ -7,7 +7,7 @@ const CTA = () => {
     <div id="CTA-section">
       <div className="cta-area container">
         <div className="desc">
-          <h1>Sân chơi cho các bé thiếu nhi với độ tuổi từ 5 đến 16.</h1>
+          <h2>Sân chơi cho các bé thiếu nhi với độ tuổi từ 5 đến 16.</h2>
           <br />
           <h4>Tăng khả năng dạn dĩ, tạo dưng sự tự tin ở trẻ</h4>
           <br />
@@ -26,11 +26,11 @@ const CTA = () => {
       </div>
       <div className="main-message">
         <div className="container">
-          <h1>
+          <h2>
             Các lớp học của câu lạc bộ búp bê xinh sẽ giúp trẻ{" "}
             <span className="promo-hightlight">tự tin toả sáng</span> trên các
             sân khấu nhà trường và sóng truyền hình.
-          </h1>
+          </h2>
         </div>
       </div>
     </div>

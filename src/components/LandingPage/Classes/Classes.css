@@ -1,3 +1,6 @@
+.class-section {
+  margin-bottom: 2rem;
+}
 .class-icon {
   height: 150px;
   width: 150px;
@@ -12,6 +15,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 2rem;
 }
 .class-icon img {
   max-height: 80px;
@@ -22,15 +26,43 @@
 .class-section {
   padding: 5rem 0;
 }
+.bubble-bg {
+  position: relative;
+}
+.bubble-1,
+.bubble-2,
+.bubble-3 {
+  position: absolute;
+  border-radius: 50%;
+}
+.bubble-1 {
+  height: 280px;
+  width: 280px;
+  background-color: #b7e1dd;
+  top: -50px;
+  left: -200px;
+}
+.bubble-2 {
+  top: 0;
+  left: 70vw;
+  width: 60px;
+  height: 60px;
+  background-color: #c1a4b8;
+}
+.bubble-3 {
+  top: 35vw;
+  left: 40vw;
+  width: 150px;
+  height: 150px;
+  background-color: #f7b4c3;
+}
 
 .TV-area {
   display: grid;
   justify-content: center;
   align-content: center;
   max-height: 500px;
-  height: 90vh;
   width: 100%;
-  background: url("../../../assets/pngegg.png") no-repeat center center / cover;
 }
 
 .tv-border {
@@ -39,10 +71,10 @@
   width: 65vw;
   border-radius: 2vw;
   background: #645430;
-  background: -webkit-radial-gradient(#599975 55%, #588b8b);
-  background: -o-radial-gradient(#599975 55%, #588b8b);
-  background: -moz-radial-gradient(#599975 55%, #588b8b);
-  background: radial-gradient(#599975 50%, #588b8b);
+  background: -webkit-radial-gradient(#fdc177 55%, #ff7175);
+  background: -o-radial-gradient(#fdc177 55%, #ff7175);
+  background: -moz-radial-gradient(#fdc177 55%, #ff7175);
+  background: radial-gradient(#fdc177 50%, #ff7175);
 }
 
 .screen-border {
@@ -62,7 +94,7 @@
   margin-top: 3%;
   margin-left: 3%;
   border-radius: 10px;
-  background: #252525;
+  background: #000;
 }
 
 .channel-dial {
@@ -174,6 +206,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+  }
+  .bubble-1,
+  .bubble-2,
+  .bubble-3 {
+    transform: scale(2);
   }
   .class-icons {
     width: 40em;

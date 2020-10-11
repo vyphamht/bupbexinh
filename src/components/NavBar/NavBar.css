@@ -12,6 +12,6 @@
 .navbar-light .nav-item .nav-link:active,
 .navbar-light .nav-item .nav-link:focus,
 .navbar-light .nav-item:hover .nav-link {
-  color: hotpink;
+  color: #ff7175;
   font-weight: bolder;
 }
