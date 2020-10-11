@@ -22,12 +22,7 @@
 .class-section {
   padding: 5rem 0;
 }
-/* tv set */
-/* .container {
-  position: relative;
-  left: 0;
-  margin: 10% 0 0 40%;
-} */
+
 .TV-area {
   display: grid;
   justify-content: center;
@@ -160,7 +155,7 @@
   background: #304d4d;
 }
 
-canvas {
+#tv-screen {
   position: absolute;
   background: #000;
   top: 6.5%;
@@ -168,6 +163,9 @@ canvas {
   width: 75%;
   height: 87%;
   border-radius: 8px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
 
 @media (min-width: 1201px) {

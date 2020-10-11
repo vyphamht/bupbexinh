@@ -3,6 +3,7 @@ import "./Classes.css";
 import dance from "../../../assets/dancer.png";
 import sing from "../../../assets/musician.png";
 import aerobics from "../../../assets/zumba.png";
+import ReactPlayer from "react-player";
 
 const Classes = () => {
   return (
@@ -47,7 +48,22 @@ const Classes = () => {
             <span className="speaker-3"></span>
             <span className="make"></span>
             <div className="screen-border-2"></div>
-            <canvas id="tv-screen" />
+            <div id="tv-screen" wrapper="true">
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=hS5CfP8n_js"
+                className="react-player"
+                width="100%"
+                height="100%"
+                playing
+                loop
+                muted
+                config={{
+                  youtube: {
+                    playerVars: { showInfo: 0 },
+                  },
+                }}
+              ></ReactPlayer>
+            </div>
           </div>
         </div>
       </div>
