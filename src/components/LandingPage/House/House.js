@@ -22,10 +22,8 @@ const House = () => {
           <div className="numbered-slogans">
             <div className="number-slogan two">2</div>
             <h2>
-              Cho bé cơ hội
-              <span className="slogan-hightlight-2">
-                khám phá bản thân
-              </span>{" "}
+              Cho bé cơ hội{" "}
+              <span className="slogan-hightlight-2">khám phá bản thân</span>{" "}
               trong lĩnh vực hát múa
             </h2>
             <p>
@@ -36,7 +34,7 @@ const House = () => {
           <div className="numbered-slogans">
             <div className="number-slogan three">3</div>
             <h2>
-              Xây dựng các
+              Xây dựng các{" "}
               <span className="slogan-hightlight-3">kĩ năng xã hội</span> cho bé
               trong một môi trường đầy năng động
             </h2>

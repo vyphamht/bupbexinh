@@ -21,8 +21,8 @@
   letter-spacing: -0.44px;
 }
 .one {
-  background-color: #f7b4c3;
-  box-shadow: inset 8px 4px 0 0 #fff, 9px 5px 0 -2px #f7b4c3;
+  background-color: #fdc177;
+  box-shadow: inset 8px 4px 0 0 #fff, 9px 5px 0 -2px #fdc177;
 }
 .two {
   background-color: #b7e1dd;
@@ -33,7 +33,7 @@
   box-shadow: inset 8px 4px 0 0 #fff, 9px 5px 0 -2px #c1a4b8;
 }
 .slogan-hightlight-1 {
-  box-shadow: inset 0 -0.45em 0 0 #f7b4c3;
+  box-shadow: inset 0 -0.45em 0 0 #fdc177;
   padding: 0 0.05em 0.05em;
 }
 .slogan-hightlight-2 {
