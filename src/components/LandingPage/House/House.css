@@ -94,7 +94,7 @@
     max-width: 270px;
   }
 }
-@media (max-width: 479px) {
+@media (max-width: 279px) {
   .house img {
     display: none;
   }

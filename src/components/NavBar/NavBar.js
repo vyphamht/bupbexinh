@@ -25,8 +25,9 @@ class NavBar extends Component {
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-            <a className="navbar-brand" href="/">
-              <img src={logo} alt="Company Logo" height="40" />
+            <a className="navbar-brand" href="/" style={{ color: "#f26d4d" }}>
+              {/* <img src={logo} alt="Company Logo" height="40" /> */}
+              <h2 style={{ fontWeight: "bold" }}>Búp Bê Xinh</h2>
             </a>
 
             <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
