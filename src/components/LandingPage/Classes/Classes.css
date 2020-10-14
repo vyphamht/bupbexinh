@@ -39,7 +39,7 @@
 .bubble-1 {
   height: 280px;
   width: 280px;
-  background-color: #b7e1dd;
+  background-color: #9fd4b0;
   top: -50px;
   left: -200px;
 }
@@ -48,14 +48,14 @@
   left: 70vw;
   width: 60px;
   height: 60px;
-  background-color: #c1a4b8;
+  background-color: #b8e2de;
 }
 .bubble-3 {
   top: 35vw;
   left: 40vw;
   width: 150px;
   height: 150px;
-  background-color: #f7b4c3;
+  background-color: #f8dbdf;
 }
 
 .TV-area {
@@ -72,10 +72,10 @@
   width: 65vw;
   border-radius: 2vw;
   background: #645430;
-  background: -webkit-radial-gradient(#fdc177 55%, #ff7175);
-  background: -o-radial-gradient(#fdc177 55%, #ff7175);
-  background: -moz-radial-gradient(#fdc177 55%, #ff7175);
-  background: radial-gradient(#fdc177 50%, #ff7175);
+  background: -webkit-radial-gradient(#fdc277 55%, #f26d4d);
+  background: -o-radial-gradient(#fdc277 55%, #f26d4d);
+  background: -moz-radial-gradient(#fdc277 55%, #f26d4d);
+  background: radial-gradient(#fdc277 50%, #f26d4d);
 }
 
 .screen-border {
@@ -105,7 +105,7 @@
   margin-top: 10%;
   margin-left: 86%;
   border-radius: 50%;
-  background: #304d4d;
+  background: #fdc277;
 }
 
 .volume-dial {
@@ -115,7 +115,7 @@
   margin-top: 25%;
   margin-left: 86%;
   border-radius: 50%;
-  background: #304d4d;
+  background: #fdc277;
 }
 
 .socket-1 {
@@ -125,7 +125,7 @@
   margin-top: 40%;
   margin-left: 82.5%;
   border-radius: 50%;
-  background: #252525;
+  background: #3a3737;
 }
 
 .socket-2 {
@@ -135,7 +135,7 @@
   margin-top: 40%;
   margin-left: 88.5%;
   border-radius: 50%;
-  background: #252525;
+  background: #3a3737;
 }
 
 .socket-3 {
@@ -145,7 +145,7 @@
   margin-top: 40%;
   margin-left: 94.5%;
   border-radius: 50%;
-  background: #252525;
+  background: #3a3737;
 }
 
 .speaker {
@@ -155,7 +155,7 @@
   margin-top: 46%;
   margin-left: 84%;
   border-radius: 50%;
-  background: #252525;
+  background: #3a3737;
 }
 
 .speaker-2 {
@@ -165,7 +165,7 @@
   margin-top: 48%;
   margin-left: 84%;
   border-radius: 50%;
-  background: #252525;
+  background: #3a3737;
 }
 
 .speaker-3 {
@@ -175,7 +175,7 @@
   margin-top: 50%;
   margin-left: 84%;
   border-radius: 50%;
-  background: #252525;
+  background: #3a3737;
 }
 
 .make {
@@ -185,7 +185,7 @@
   margin-top: 56%;
   margin-left: 84%;
   border-radius: 50%;
-  background: #304d4d;
+  background: #fdc277;
 }
 
 #tv-screen {

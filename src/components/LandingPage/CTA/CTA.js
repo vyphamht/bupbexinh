@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import dance from "../../../assets/flamenco-dancer.png";
+import dance from "../../../assets/singing-kid.png";
 import "./CTA.css";
 const CTA = () => {
   return (
@@ -9,7 +9,7 @@ const CTA = () => {
         <div className="desc">
           <h2>Sân chơi cho các bé thiếu nhi với độ tuổi từ 5 đến 16.</h2>
           <br />
-          <h4>Tăng khả năng dạn dĩ, tạo dưng sự tự tin ở trẻ</h4>
+          <h4>Tăng khả năng dạn dĩ, tạo dựng sự tự tin ở trẻ</h4>
           <br />
           <div className="cta-btn">
             <Link className="btn" to="/register">

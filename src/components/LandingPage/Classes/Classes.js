@@ -12,7 +12,7 @@ const Classes = () => {
         <h1
           style={{
             fontWeight: "bold",
-            color: "#ff7175",
+            color: "#f26d4d",
           }}
         >
           Các lớp học <br /> bao gồm

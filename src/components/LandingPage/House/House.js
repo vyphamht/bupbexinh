@@ -1,6 +1,6 @@
 import React from "react";
 import "./House.css";
-import placeholder from "../../../assets/placeholder.png";
+import house from "../../../assets/house.png";
 
 const House = () => {
   return (
@@ -41,7 +41,7 @@ const House = () => {
             <p>Là môi trường cho bé kết bạn, giao lưu học hỏi và chia sẻ.</p>
           </div>
         </div>
-        <img src={placeholder} alt="placeholder" />
+        <img src={house} alt="house" />
       </div>
     </div>
   );
