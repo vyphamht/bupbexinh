@@ -19,6 +19,9 @@
 .illu {
   padding: 20px;
 }
+.desc {
+  align-self: center;
+}
 .btn {
   margin-bottom: 2rem;
   display: inline-flex;
@@ -72,7 +75,7 @@
   .main-message h2 {
     background-color: #9fd4b0;
     border-left: dashed 4px #f26d4d;
-    padding: 40px 100px;
+    padding: 80px 100px;
     border-radius: 0 20px 20px 0;
   }
 }
