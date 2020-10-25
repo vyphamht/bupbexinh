@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Footer from "./components/Footer/Footer";
 import NavBar from "./components/NavBar/NavBar";
 
 const setTime = () => {
@@ -35,6 +36,7 @@ const App = () => {
         className="animate__animated animate__slideInUp"
       >
         <NavBar />
+        <Footer />
       </div>
     </div>
   );
