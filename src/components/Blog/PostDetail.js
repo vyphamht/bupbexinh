@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { db } from "../../constant/firebaseConfig";
-import { useParams } from "react-router-dom";
+
+import { useParams, Link } from "react-router-dom";
 import "./PostDetail.css";
 
 const PostDetail = () => {
@@ -23,9 +24,9 @@ const PostDetail = () => {
       className="post-detail-page"
     >
       <div>
-        <button className="btn go-back">
-          <a href="/blog">Go back</a>
-        </button>
+        <Link className="btn go-back" to="/blog">
+          Go back
+        </Link>
       </div>
       <br />
       <div className="post-detail">
