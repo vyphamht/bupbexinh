@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
 import NavBar from "./components/NavBar/NavBar";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 const setTime = () => {
   // eslint-disable-next-line
@@ -37,6 +38,7 @@ const App = () => {
       >
         <NavBar />
         <Footer />
+        <ScrollToTop />
       </div>
     </div>
   );

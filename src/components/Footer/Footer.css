@@ -1,5 +1,10 @@
 .footer {
-  margin-top: 50vh;
-  height: 600px;
-  background-color: yellow;
+  position: relative;
+  bottom: 0;
+  width: 100vw;
+  height: 400px;
+  background-color: #fdc277;
+  color: white;
+  display: grid;
+  align-items: center;
 }

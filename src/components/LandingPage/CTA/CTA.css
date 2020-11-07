@@ -47,7 +47,7 @@
 }
 .btn:hover {
   background-color: #fdc277;
-  border: 1px solid #fdc277;
+  border: 2px solid #fdc277;
   box-shadow: inset 1px 1px 0 1px #fdc277;
 }
 .promo-hightlight {
