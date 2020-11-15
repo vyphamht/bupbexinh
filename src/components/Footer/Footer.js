@@ -28,6 +28,7 @@ const Footer = () => {
           <a
             href="mailto:clbbupbexinh2000@yahoo.com.vn"
             target="_blank"
+            rel="noopener noreferrer"
             style={{ textDecoration: "none", color: "white" }}
           >
             <FontAwesomeIcon icon={faEnvelope} style={{ fontSize: "1.2rem" }} />
