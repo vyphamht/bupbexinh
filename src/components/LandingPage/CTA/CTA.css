@@ -52,13 +52,22 @@
   padding: 0 0.05em 0.05em;
 }
 .main-message {
-  background-color: #b8e2de;
+  background-color: #fdc277;
+  padding: 50px 0;
+}
+.main-message h2 {
+  padding: 0 0 0 20px;
+}
+.main-message .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 #wave1 {
   position: relative;
   height: 30%;
   width: 110%;
-  animation: move-left 4s ease infinite;
+  animation: move-left 10s ease infinite;
 }
 @keyframes move-left {
   0% {
@@ -80,7 +89,7 @@
   position: relative;
   height: 30%;
   width: 110%;
-  animation: move-right 4s ease infinite;
+  animation: move-right 15s ease infinite;
 }
 @keyframes move-right {
   0% {
@@ -125,6 +134,9 @@
     display: grid;
     justify-content: center;
     align-content: center;
+  }
+  .main-message .container img {
+    display: none;
   }
 }
 

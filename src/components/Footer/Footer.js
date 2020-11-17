@@ -6,6 +6,7 @@ import {
   faPhone,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
+import footerImage from "../../assets/footer.png";
 
 const Footer = () => {
   return (
@@ -36,6 +37,11 @@ const Footer = () => {
           </a>
         </div>
       </div>
+      <img
+        src={footerImage}
+        alt="footer"
+        style={{ height: "10vh", margin: "0 auto" }}
+      />
     </div>
   );
 };
